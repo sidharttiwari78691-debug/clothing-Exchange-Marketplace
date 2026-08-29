@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - SwapWear</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Swap<span>Wear</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Explore</a></li>
+            <li><a href="add-item.html">List an Item</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <!-- Header -->
+        <div class="dashboard-header">
+
+            <h1>Welcome back, Ankit 👋</h1>
+
+            <p>
+                Manage your clothing listings, swap requests and exchange activity.
+            </p>
+
+        </div>
+
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2>3</h2>
+                <p>My Listings</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>2</h2>
+                <p>Pending Requests</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>5</h2>
+                <p>Completed Swaps</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>4.8 ⭐</h2>
+                <p>Swap Rating</p>
+            </div>
+
+        </div>
+
+
+      <!-- My Clothing Listings -->
+<section class="dashboard-section">
+
+    <div class="dashboard-section-header">
+        <h2>My Clothing Listings</h2>
+
+        <a href="add-item.html" class="btn">
+            + Add New Item
+        </a>
+    </div>
+
+    <div
+        id="myListings"
+        class="card-grid listing-grid"
+    >
+    </div>
+
+    <p
+        id="noMyListings"
+        class="no-results"
+        style="display: none;"
+    >
+        You have not added any clothing items yet.
+    </p>
+
+</section>
+
+        <!-- Incoming Swap Requests -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <h2>Incoming Swap Requests</h2>
+
+                <a href="swap-request.html" class="btn btn-outline">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div class="request-list">
+
+                <!-- Request 1 -->
+                <div class="request-card">
+
+                    <div>
+
+                        <h3>Rahul Sharma</h3>
+
+                        <p>
+                            Wants to exchange
+                            <strong>Black Hoodie</strong>
+                            for your
+                            <strong>Grey Cotton Hoodie</strong>
+                        </p>
+
+                    </div>
+
+
+                    <div class="request-actions">
+
+                        <button class="btn">
+                            Accept
+                        </button>
+
+                        <button class="btn btn-danger">
+                            Reject
+                        </button>
+
+                        <a href="chat.html" class="btn btn-outline">
+                            Chat
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Request 2 -->
+                <div class="request-card">
+
+                    <div>
+
+                        <h3>Sneha Verma</h3>
+
+                        <p>
+                            Wants to exchange
+                            <strong>Women's Denim Jeans</strong>
+                            for your
+                            <strong>Blue Slim Fit Jeans</strong>
+                        </p>
+
+                    </div>
+
+
+                    <div class="request-actions">
+
+                        <button class="btn">
+                            Accept
+                        </button>
+
+                        <button class="btn btn-danger">
+                            Reject
+                        </button>
+
+                        <a href="chat.html" class="btn btn-outline">
+                            Chat
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Activity -->
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+                <h2>Recent Swap Activity</h2>
+            </div>
+
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <span>🔄</span>
+
+                    <div>
+
+                        <h4>
+                            Swap Completed
+                        </h4>
+
+                        <p>
+                            You exchanged a Denim Shirt with Priya Mehta.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <span>💬</span>
+
+                    <div>
+
+                        <h4>
+                            New Message
+                        </h4>
+
+                        <p>
+                            Rahul Sharma sent you a message about a swap.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <span>📥</span>
+
+                    <div>
+
+                        <h4>
+                            New Swap Request
+                        </h4>
+
+                        <p>
+                            Sneha Verma wants to exchange an item with you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SwapWear | Sustainable Clothing Exchange Marketplace
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

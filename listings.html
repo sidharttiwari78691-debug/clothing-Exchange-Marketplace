@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Explore Clothes - SwapWear</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- ===============================
+         NAVBAR
+    ================================ -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <a
+            href="index.html"
+            class="logo"
+        >
+            Swap<span>Wear</span>
+        </a>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="listings.html"
+                    class="active"
+                >
+                    Explore
+                </a>
+            </li>
+
+            <li>
+                <a href="add-item.html">
+                    List an Item
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ===============================
+         MARKETPLACE SECTION
+    ================================ -->
+    <main>
+
+        <section class="section">
+
+            <!-- Page Title -->
+            <h1 class="section-title">
+                Explore Clothes 👕
+            </h1>
+
+
+            <!-- Description -->
+            <p class="marketplace-text">
+                Discover clothes available for exchange and find your next perfect swap.
+            </p>
+
+
+            <!-- ===============================
+                 SEARCH AND FILTERS
+            ================================ -->
+            <div class="filters">
+
+                <!-- Search -->
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search clothes, brands or locations..."
+                >
+
+
+                <!-- Category Filter -->
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="shirt">
+                        Shirts
+                    </option>
+
+                    <option value="jacket">
+                        Jackets
+                    </option>
+
+                    <option value="hoodie">
+                        Hoodies
+                    </option>
+
+                    <option value="jeans">
+                        Jeans
+                    </option>
+
+                    <option value="shoes">
+                        Shoes
+                    </option>
+
+                    <option value="dress">
+                        Dresses
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <!-- Location Filter -->
+                <select id="locationFilter">
+
+                    <option value="all">
+                        All Locations
+                    </option>
+
+                    <option value="delhi">
+                        Delhi
+                    </option>
+
+                    <option value="mumbai">
+                        Mumbai
+                    </option>
+
+                    <option value="bangalore">
+                        Bangalore
+                    </option>
+
+                    <option value="jaipur">
+                        Jaipur
+                    </option>
+
+                    <option value="lucknow">
+                        Lucknow
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ===============================
+                 DYNAMIC CLOTHING LISTINGS
+
+                 JavaScript automatically
+                 displays clothing cards here
+            ================================ -->
+            <div
+                id="clothingList"
+                class="card-grid listing-grid"
+            >
+            </div>
+
+
+            <!-- ===============================
+                 NO RESULTS MESSAGE
+            ================================ -->
+            <p
+                id="noResults"
+                class="no-results"
+                style="display: none;"
+            >
+                😔 No clothing items found. Try changing your search or filters.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===============================
+         FOOTER
+    ================================ -->
+    <footer>
+
+        <p>
+            © 2026 SwapWear |
+            Sustainable Clothing Exchange Marketplace
+        </p>
+
+    </footer>
+
+
+    <!-- ===============================
+         JAVASCRIPT
+    ================================ -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

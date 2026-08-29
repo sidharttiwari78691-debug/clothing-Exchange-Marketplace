@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Item - SwapWear</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Swap<span>Wear</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Explore</a></li>
+            <li><a href="add-item.html">List an Item</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Edit Item -->
+    <section class="section">
+
+        <div class="add-item-container">
+
+            <h1 class="section-title">
+                Edit Clothing Item ✏️
+            </h1>
+
+            <p class="form-description">
+                Update your clothing item details.
+            </p>
+
+
+            <form id="editItemForm">
+
+                <!-- Item Name -->
+                <div class="form-group">
+
+                    <label for="editItemName">
+                        Clothing Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editItemName"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Category -->
+                <div class="form-group">
+
+                    <label for="editItemCategory">
+                        Category
+                    </label>
+
+                    <select
+                        id="editItemCategory"
+                        required
+                    >
+
+                        <option value="shirt">
+                            Shirt
+                        </option>
+
+                        <option value="jacket">
+                            Jacket
+                        </option>
+
+                        <option value="hoodie">
+                            Hoodie
+                        </option>
+
+                        <option value="jeans">
+                            Jeans
+                        </option>
+
+                        <option value="shoes">
+                            Shoes
+                        </option>
+
+                        <option value="dress">
+                            Dress
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Brand -->
+                <div class="form-group">
+
+                    <label for="editItemBrand">
+                        Brand
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editItemBrand"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Size -->
+                <div class="form-group">
+
+                    <label for="editItemSize">
+                        Size
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editItemSize"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Condition -->
+                <div class="form-group">
+
+                    <label for="editItemCondition">
+                        Condition
+                    </label>
+
+                    <select
+                        id="editItemCondition"
+                        required
+                    >
+
+                        <option value="New">New</option>
+
+                        <option value="Like New">
+                            Like New
+                        </option>
+
+                        <option value="Excellent">
+                            Excellent
+                        </option>
+
+                        <option value="Good">
+                            Good
+                        </option>
+
+                        <option value="Fair">
+                            Fair
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Value -->
+                <div class="form-group">
+
+                    <label for="editItemValue">
+                        Estimated Swap Value (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="editItemValue"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="form-group">
+
+                    <label for="editItemLocation">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editItemLocation"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Description -->
+                <div class="form-group">
+
+                    <label for="editItemDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="editItemDescription"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="edit-form-actions">
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Save Changes
+                    </button>
+
+                    <a
+                        href="dashboard.html"
+                        class="btn btn-outline"
+                    >
+                        Cancel
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SwapWear
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

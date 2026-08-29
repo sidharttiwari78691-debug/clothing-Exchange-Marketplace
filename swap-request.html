@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Swap - SwapWear</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Swap<span>Wear</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Explore</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Swap Request Section -->
+   <section class="section">
+
+    <div class="swap-request-container">
+
+        <h1 class="section-title">
+            Send Swap Request 🔄
+        </h1>
+
+        <p id="requestedItemInfo">
+            Loading item details...
+        </p>
+
+
+        <form id="swapRequestForm">
+
+            <div class="form-group">
+
+                <label for="myItemSelect">
+                    Select Your Item for Swap
+                </label>
+
+                <select
+                    id="myItemSelect"
+                    required
+                >
+
+                    <option value="">
+                        Select your clothing item
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="swapMessage">
+                    Message
+                </label>
+
+                <textarea
+                    id="swapMessage"
+                    rows="5"
+                    placeholder="Write a message to the item owner..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Send Swap Request
+            </button>
+
+        </form>
+
+    </div>
+
+</section>

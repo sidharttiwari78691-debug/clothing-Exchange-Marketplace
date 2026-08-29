@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel - SwapWear</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Swap<span>Wear</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="dashboard.html">User Dashboard</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Admin Dashboard -->
+    <main class="admin-dashboard">
+
+        <div class="admin-header">
+
+            <div>
+                <h1>Admin Management Panel 🛠️</h1>
+
+                <p>
+                    Monitor users, clothing listings and swap activities.
+                </p>
+            </div>
+
+            <span class="admin-badge">
+                Administrator
+            </span>
+
+        </div>
+
+
+        <!-- Statistics -->
+        <section class="admin-stats">
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">👥</span>
+
+                <div>
+                    <h2>1,248</h2>
+                    <p>Total Users</p>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">👕</span>
+
+                <div>
+                    <h2 id="totalListings">6</h2>
+                    <p>Total Listings</p>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">🔄</span>
+
+                <div>
+                    <h2>328</h2>
+                    <p>Successful Swaps</p>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-card">
+                <span class="admin-stat-icon">⚠️</span>
+
+                <div>
+                    <h2>3</h2>
+                    <p>Reported Listings</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Listing Management -->
+        <section class="admin-section">
+
+            <div class="admin-section-heading">
+
+                <h2>Manage Clothing Listings</h2>
+
+                <input
+                    type="text"
+                    id="adminSearch"
+                    placeholder="Search listings..."
+                >
+
+            </div>
+
+
+            <div class="admin-table-container">
+
+                <table class="admin-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Item</th>
+                            <th>Owner</th>
+                            <th>Category</th>
+                            <th>Location</th>
+                            <th>Value</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="adminListingTable">
+
+                        <tr>
+                            <td>Blue Denim Jacket</td>
+                            <td>Rahul Sharma</td>
+                            <td>Jacket</td>
+                            <td>Delhi</td>
+                            <td>₹1800</td>
+                            <td>
+                                <span class="status active">
+                                    Active
+                                </span>
+                            </td>
+                            <td>
+                                <button class="remove-listing">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Black Hoodie</td>
+                            <td>Priya Mehta</td>
+                            <td>Hoodie</td>
+                            <td>Mumbai</td>
+                            <td>₹1200</td>
+                            <td>
+                                <span class="status active">
+                                    Active
+                                </span>
+                            </td>
+                            <td>
+                                <button class="remove-listing">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Women's Denim Jeans</td>
+                            <td>Sneha Verma</td>
+                            <td>Jeans</td>
+                            <td>Jaipur</td>
+                            <td>₹1600</td>
+                            <td>
+                                <span class="status reported">
+                                    Reported
+                                </span>
+                            </td>
+                            <td>
+                                <button class="remove-listing">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Adidas Running Shoes</td>
+                            <td>Vikram Singh</td>
+                            <td>Shoes</td>
+                            <td>Lucknow</td>
+                            <td>₹2200</td>
+                            <td>
+                                <span class="status active">
+                                    Active
+                                </span>
+                            </td>
+                            <td>
+                                <button class="remove-listing">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Platform Activity -->
+        <section class="admin-section">
+
+            <h2>Recent Platform Activity</h2>
+
+            <div class="admin-activity">
+
+                <div class="admin-activity-item">
+
+                    <span>👤</span>
+
+                    <div>
+                        <strong>New User Registration</strong>
+
+                        <p>
+                            A new user joined SwapWear.
+                        </p>
+                    </div>
+
+                    <small>10 minutes ago</small>
+
+                </div>
+
+
+                <div class="admin-activity-item">
+
+                    <span>👕</span>
+
+                    <div>
+                        <strong>New Clothing Listing</strong>
+
+                        <p>
+                            A user added a Winter Jacket for swapping.
+                        </p>
+                    </div>
+
+                    <small>25 minutes ago</small>
+
+                </div>
+
+
+                <div class="admin-activity-item">
+
+                    <span>🔄</span>
+
+                    <div>
+                        <strong>Swap Completed</strong>
+
+                        <p>
+                            A clothing exchange was successfully completed.
+                        </p>
+                    </div>
+
+                    <small>1 hour ago</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Admin Quick Actions -->
+        <section class="admin-section">
+
+            <h2>Quick Actions</h2>
+
+            <div class="admin-actions">
+
+                <button id="viewReports" class="btn">
+                    View Reports
+                </button>
+
+                <button id="manageUsers" class="btn btn-outline">
+                    Manage Users
+                </button>
+
+                <button id="platformAnalytics" class="btn">
+                    Platform Analytics
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SwapWear Admin Panel
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
